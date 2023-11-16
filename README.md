@@ -1,6 +1,6 @@
 # AutoEncoder
 
-## AutoEncoder for face images reconstruction
+## AutoEncoder for face image reconstruction
 
 ### Summary
 | Section | Description |
