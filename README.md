@@ -1,5 +1,7 @@
 # AutoEncoder
 
+## AutoEncoder for face images reconstruction
+
 ### Summary
 | Section | Description |
 | ------- | ----------- |
