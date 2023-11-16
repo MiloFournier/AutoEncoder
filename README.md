@@ -6,10 +6,11 @@
 | Section | Description |
 | ------- | ----------- |
 | 1. Project Description | Quick introduction |
-| 2. Data Initialization | Blur + normalization |
-| 3. Data Visualization | Print a row of images |
-| 4. Model | AutoEncoder itself |
-| 5. Results | Quick recap |
+| 2. File Structure | Diagram |
+| 3. Data Initialization | Blur + normalization |
+| 4. Data Visualization | Print a row of images |
+| 5. Model | AutoEncoder itself |
+| 6. Results | Quick recap |
 
 ---
 ### 1. Project Description
@@ -24,7 +25,7 @@ This is a jupyter notebook where I implement an **Overcomplete Convolutional Den
 ```
 
 ---
-### 2. Data Initialization
+### 3. Data Initialization
 To have better performances, it is a good idea to train the model on the images with noise. Here I added a Gaussian blur on every image:
 ```py
 x_train_blur = np.empty_like(x_train)
@@ -50,7 +51,7 @@ def denorm(a):
 ```
 
 ---
-### 3. Data Visualization 
+### 4. Data Visualization 
 Here I havea function to plot a row of images:
 ```py
 def plot_rows(*img_rows, scale=1.):
@@ -71,7 +72,7 @@ We can visualize the input images and the ones blurred when running `plot_rows(x
 </p>
 
 ---
-### 4. Model
+### 5. Model
 This model is an Overcomplete Convolutional Denoising AutoEncoder: 
 ```py
 def build_model():
@@ -94,7 +95,7 @@ def build_model():
 ```
 
 ---
-### 5. Results
+### 6. Results
 After training the model and running it for **15 epochs**, I have good results. I used the mean squared error loss function, and after 15 epochs it is **less than 2.75%**.
 
 Here is the 1st epoch:
