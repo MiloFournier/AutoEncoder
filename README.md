@@ -6,7 +6,7 @@
 | Section | Description |
 | ------- | ----------- |
 | 1. Project Description | Quick introduction |
-| 2. File Structure | Diagram |
+| 2. File Structure | Structure diagram |
 | 3. Data Initialization | Blur + normalization |
 | 4. Data Visualization | Print a row of images |
 | 5. Model | AutoEncoder itself |
