@@ -16,6 +16,14 @@
 This is a jupyter notebook where I implement an **Overcomplete Convolutional Denoising AutoEncoder in order to reconstruct face images**.
 
 ---
+### 2. File Structure
+```
+/AutoEncoder
+    |___ AutoEncoder.ipynb
+    |___ README.md
+```
+
+---
 ### 2. Data Initialization
 To have better performances, it is a good idea to train the model on the images with noise. Here I added a Gaussian blur on every image:
 ```py
